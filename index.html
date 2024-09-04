@@ -4,8 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="./index.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <h1 style="color:rgb(255, 0, 0)">Mohamad ANAS</h1>
+    <div class="navbar">
+        <div class="logo">
+            <img src="./images/bookmyshow-logo_brandlogos.net_rzqea.png"/>
+        </div>
+        <div class="content">
+            <ul>
+                <li><input type="search" placeholder="search here for movies"></li>
+                <li>
+                    <select id="citySelect">
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Bhimavaram">Bhimavaram</option>
+                        <option value="Chennai">Chennai</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="cityCarousel" class="carousel slide slider" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/1725277509061_webbannerbandland.avif" class="d-block w-100" alt="Hyderabad">
+                
+            </div>
+            <div class="carousel-item">
+                <img src="./images/1725273429008_korolava1240x300hyderabad.avif" class="d-block w-100" alt="Mumbai">
+               
+            </div>
+            <div class="carousel-item">
+                <img src="./images/1725276118866_cherryblossom1240x300.avif" class="d-block w-100" alt="Chennai"> 
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#cityCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#cityCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span >Next</span>
+        </button>
+    </div>
+       
+
+
+    <div id="cityContent" class="city-content">
+
+
+
+
+
+        <!-- Content will change based on selection
+        <h2>Welcome to Hyderabad</h2>
+        <img src="./images/bookmyshow-logo_brandlogos.net_rzqea.png" alt="Hyderabad Image" class="city-image">
+        <p>Enjoy the best movies in Hyderabad.</p>
+        <button onclick="showMoreInfo()">Show More Info</button> -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+    <script src="./index.js"></script>
 </body>
 </html>
