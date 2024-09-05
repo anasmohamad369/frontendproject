@@ -19,6 +19,43 @@ document.getElementById('citySelect').addEventListener('change', function() {
             break;
     }
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('movieSearch');
+    
+    if (!searchInput) {
+        console.error('Search input element not found');
+        return;
+    }
+
+    searchInput.addEventListener('input', function() {
+        const query = searchInput.value.toLowerCase();
+        const movies = document.querySelectorAll('.sub-movie-list');
+        
+        if (movies.length === 0) {
+            console.error('No movie elements found');
+        }
+
+        movies.forEach(function(movie) {
+            const titleElement = movie.querySelector('.movie-title');
+            
+            if (!titleElement) {
+                console.error('Movie title element not found in', movie);
+                return;
+            }
+            
+            const titleText = titleElement.textContent.toLowerCase();
+            if (titleText.includes(query)) {
+                movie.style.display = 'block';
+            } else {
+                movie.style.display = 'none';
+            }
+        });
+    });
+});
+
+
+    
+
 function show() {
     var citiesDisplay = document.getElementById("cities-display");
     if (citiesDisplay.style.display === "none" || citiesDisplay.style.display === "") {
