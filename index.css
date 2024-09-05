@@ -1,5 +1,5 @@
 body {
-    background-color: #343131;
+    background-color: #d8d0d0;
     margin: 0px;
     color: #f1f1f1;
 }
@@ -69,13 +69,53 @@ select:focus {
     align-items: center;
     width: 100%;
 }
-.slider{
+.loc{
+    height: 200px;
+    width: 100%;
+    /* cursor:pointer; */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #c3baba;
-    height: 450px;
     flex-direction: column;
+}
+.loc span {
+    font-size: 50px; /* Adjust this value to increase the icon size */
+    /* line-height: 200px; */
+    width: 200px;
+    text-align: center;
+    color: #343131;
+    /* background-color: aqua; */
+}
+.loc a{
+    color: #000000;
+    text-decoration: none;
+    padding: 30px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* margin-top: 30px ; */
+}
+.loc a:hover{
+    color: rgb(0, 72, 255);
+    /* font-family: cursive; */
+}
+
+.head h1{
+    color: gold;
+    background-color: #000000;
+
+    font-size: 40px;
+}
+.movies{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #343131; */
+    margin: auto;
+}
+.movies img{
+    height: 350px;
+    width: 250px;
 }
 /* Responsive Styles */
 @media (max-width: 768px) {

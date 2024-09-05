@@ -19,3 +19,13 @@ document.getElementById('citySelect').addEventListener('change', function() {
             break;
     }
 });
+function show() {
+    var citiesDisplay = document.getElementById("cities-display");
+    if (citiesDisplay.style.display === "none" || citiesDisplay.style.display === "") {
+        citiesDisplay.style.display = "block"; // Show the content
+    } else {
+        citiesDisplay.style.display = "none"; // Hide the content
+    }
+}
+
+

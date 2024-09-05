@@ -1,0 +1,23 @@
+.hyd-movie{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    flex-wrap: wrap; 
+    gap: 10px; 
+    /* flex-direction: column; */
+ }
+ .sub-movie-list{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 10px;
+ }
+ .sub-movie-list p{
+     color: aliceblue;
+ }
+ .sub-movie-list img{
+     height: 360px;
+     width: 220px;
+ }
+ 
