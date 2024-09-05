@@ -74,7 +74,8 @@ select:focus {
     justify-content: center;
     align-items: center;
     background-color: #c3baba;
-    height: 400px;
+    height: 450px;
+    flex-direction: column;
 }
 /* Responsive Styles */
 @media (max-width: 768px) {
