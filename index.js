@@ -54,6 +54,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+window.addEventListener('load', function() {
+    // Check if the page was reloaded (not a first visit)
+    if (performance.navigation.type === performance.navigation.
+        TYPE_RELOAD) {
+        // Redirect to index.html
+        window.location.href = './index.html';
+    }
+});
 
     
 
