@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const titleText = titleElement.textContent.toLowerCase();
             if (titleText.includes(query)) {
                 movie.style.display = 'block';
+                movie.style.classname="sub-movie-list";
             } else {
                 movie.style.display = 'none';
             }
