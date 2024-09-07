@@ -33,7 +33,7 @@
     margin-top: -250px;
     border-radius: 20px;
     transition: transform 2s ease-in-out;
-    transform: translateY(100px); /* Start 100px lower */
+    transform: translateY(50px); 
 }
 .lowerimg:hover {
     transform: translateY(0); /* Move up to original position on hover */
