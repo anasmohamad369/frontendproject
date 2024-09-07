@@ -26,13 +26,17 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: large;
 }
-
-.lowerimg{
+.lowerimg {
     height: 400px;
     width: 300px;
     margin: 10px;
     margin-top: -250px;
     border-radius: 20px;
+    transition: transform 2s ease-in-out;
+    transform: translateY(100px); /* Start 100px lower */
+}
+.lowerimg:hover {
+    transform: translateY(0); /* Move up to original position on hover */
 }
 .divbtn{
     display: flex;
