@@ -1,0 +1,52 @@
+.cast-container {
+    /* background-color: aliceblue; */
+    margin-top: 50px;
+    text-align: center;
+}
+.cast-member {
+    margin-bottom: 20px;
+}
+.imgclass{
+    display: flex;
+    flex-direction: column;
+}
+.upperimg {
+    height: 650px;
+    width: 100%;
+    display: block;
+ 
+}
+.antherclass{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+}
+.antherclass h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+
+.lowerimg{
+    height: 400px;
+    width: 300px;
+    margin: 10px;
+    margin-top: -250px;
+    border-radius: 20px;
+}
+.divbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .upperimg  {
+        height: 450px;
+    }
+}
+
+@media (max-width: 480px) {
+    .upperimg  {
+        height: 300px;
+    }
+}
